@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundSensor.position, sensorRadius, ground);
 
         //Si estamos en el suelo y playervelocity es menor que 0 hacemos que le vuelva a poner el valor a 0
-        //esto es para evitar que siga aplicando fuerza de gravedad cuando estemos en el suelo y evitar comportamientos extraños
+        //esto es para evitar que siga aplicando fuerza de gravedad cuando estemos en el suelo y evitar comportamientos extranos
         if(isGrounded && playerVelocity.y < 0)
         {
             playerVelocity.y = 0;
